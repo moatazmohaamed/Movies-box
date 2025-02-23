@@ -9,21 +9,21 @@ body {
 }
 
 .johnWick {
-    background-image: url(./assets/john-wicxk.png);
+    background-image: url(/assets/john-wicxk.png);
     background-size: cover;
     background-position: center center;
     height: 90vh !important;
 }
 
 .dune {
-    background-image: url(./assets/dune.jpg);
+    background-image: url(/assets/dune.jpg);
     background-size: contain;
     background-position: center center;
     height: 90vh !important;
 }
 
 .interstellar {
-    background-image: url(./assets/interstellar.jpg);
+    background-image: url(/assets/interstellar.jpg);
     background-size: cover;
     background-position: center center;
     height: 90vh !important;
