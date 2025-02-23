@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-12">
+                <div class="col">
+                    <div class="signin-signup">
+                        <form action="" class="sign-in-form" id="signInForm">
+                            <h2 class="fs-1 fw-bolder py-3">Sign in</h2>
+
+                            <div class="form-floating mb-3 w-100">
+                                <input type="email" class="form-control rounded-3 " id="emailBtn"
+                                    placeholder="name@example.com">
+                                <label for="emailBtn">Email address</label>
+                            </div>
+                            <div class="form-floating w-100  mb-3">
+                                <input type="password" class="form-control rounded-3" id="passwordBtn"
+                                    placeholder="name@example.com">
+                                <label for="passwordBtn">Password</label>
+                            </div>
+
+                            <button id="loginBtn" type="submit"
+                                class="btn rounded-pill px-4 py-2 btn-dark fs-5">Login</button>
+
+                            <p id="invalidMsg" class="alert alert-danger my-2 d-none w-100">Invalid Email Or Password
+                            </p>
+                        </form>
+
+                        <form class="sign-up-form" id="signUpForm">
+                            <h2 class="fs-1 fw-bolder py-3">Sign Up</h2>
+
+                            <div class="form-floating w-100 mb-3">
+                                <input type="text" class="form-control  rounded-3 " id="userName"
+                                    placeholder="name@example.com">
+                                <label for="userName">Enter Your Name</label>
+                                <p id="realTimeName" class="alert alert-danger d-none">Name must be atleast 3 characters
+                                </p>
+                            </div>
+
+                            <div class="form-floating w-100 mb-3">
+                                <input type="email" class="form-control rounded-3 " id="userEmail"
+                                    placeholder="name@example.com">
+                                <label for="userEmail">Email address</label>
+                                <p id="realTimeEmail" class="alert alert-danger d-none">
+                                    Emaill must starts with a valid username, containe @ and has a valid domain name
+                                    with at least one dot.
+                                </p>
+                            </div>
+
+                            <div class="form-floating w-100 mb-3">
+                                <input type="password" class="form-control rounded-3" id="userPass"
+                                    placeholder="name@example.com">
+                                <label for="userPass">Password</label>
+                                <p id="realTimePass" class="alert alert-danger d-none">Password must be atleast 8
+                                    characters and contain numbers </p>
+                            </div>
+
+                            <button id="signUpBtn" disabled type="submit"
+                                class="btn rounded-pill px-4 py-2 btn-dark fs-5">Sign
+                                up</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="panels-container">
+
+                        <div class="panel left-panel">
+                            <div class="content">
+                                <h3>Already Have an Account ??</h3>
+                                <p class="lead fs-5 py-3">Go and login!</p>
+                                <button class="btn rounded-pill fs-5 px-4 py-2 btn-dark" id="sign-in-btn">Sign
+                                    in</button>
+                            </div>
+                        </div>
+
+                        <div class="panel right-panel">
+                            <div class="content">
+                                <h3>Don't Have a Account ??</h3>
+                                <p class="lead fs-5 py-3">Harry up and register!</p>
+                                <button type="submit" id="sign-up-btn"
+                                    class="btn fs-5 rounded-pill px-4 py-2 btn-dark">Sign
+                                    up</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

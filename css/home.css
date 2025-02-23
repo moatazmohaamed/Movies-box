@@ -1,0 +1,136 @@
+/* Header */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    scroll-behavior: smooth;
+}
+
+.johnWick {
+    background-image: url(/assets/john-wicxk.png);
+    background-size: cover;
+    background-position: center center;
+    height: 90vh !important;
+}
+
+.dune {
+    background-image: url(/assets/dune.jpg);
+    background-size: contain;
+    background-position: center center;
+    height: 90vh !important;
+}
+
+.interstellar {
+    background-image: url(/assets/interstellar.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 90vh !important;
+}
+
+.fs-xl {
+    font-size: 3rem;
+}
+
+.watch-button {
+    background: #d90429;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-button:hover {
+    background-color: #b80222;
+}
+
+@media (max-width:578px) {
+    .swiper-slide p {
+        width: 100% !important;
+    }
+
+    .dune {
+        background-size: cover;
+    }
+}
+
+.pt-4rem {
+    padding-top: 10rem;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    width: 40rem;
+}
+
+.input {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 45px;
+    padding-left: 2.5rem;
+    box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+    border: 0;
+    border-radius: 12px;
+    background-color: #16171d;
+    outline: none;
+    color: #bdbecb;
+    transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: text;
+    z-index: 0;
+}
+
+.input::placeholder {
+    color: #bdbecb;
+}
+
+.input:hover {
+    box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+}
+
+.input:active {
+    transform: scale(0.95);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 2.5px #2f303d;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    fill: #bdbecb;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#logOutBtn {
+    background: #d90429;
+    color: #fff;
+}
+
+#logOutBtn:hover {
+    background: #47010d;
+}
+
+.card img {
+    cursor: pointer !important;
+}
+
+#alertMsg {
+    top: 30px;
+    z-index: 2000;
+    transition: all;
+}
+
+/* -------------- */

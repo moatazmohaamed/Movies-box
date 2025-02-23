@@ -1,0 +1,14 @@
+body {
+    background-color: #eee;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: fit-content;
+    color: #706565;
+    cursor: pointer;
+}

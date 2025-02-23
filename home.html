@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Movie Box</title>
+</head>
+
+<body>
+
+    <div id="alertMsg" class="alert alert-success position-fixed z-3 " role="alert">
+
+    </div>
+
+    <header class="vh-100 position-relative">
+        <nav class="navbar navbar-expand-lg position-absolute z-3 w-100 pt-4">
+            <div class="container">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/logo.png" alt="logo">
+                        <a class="navbar-brand text-white fs-3 mx-3" href="#">
+                            Movie Box</a>
+                    </div>
+
+                    <div class="group ">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+                        <input id="searchInput" class="input w-100" type="search" placeholder="Search..."
+                            name="searchbar" />
+                    </div>
+
+                    <div>
+                        <button id="logOutBtn" class="btn btn-warning btn-outline-dark mx-3 ">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="swiper mySwiper ">
+            <div class="swiper-wrapper ">
+
+                <div class="swiper-slide">
+                    <div class="johnWick pt-5 text-white">
+                        <div data-aos="fade-right" class="container  d-flex flex-column align-items-start  pt-4rem">
+                            <h1 class="fs-xl text-white fw-bold">John Wick 3 : <br> Parabellum</h1>
+                            <div class="d-flex align-items-center my-3">
+                                <span class="imdb-badge pe-3"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
+                                        width="30" class="me-2"> 86.0 / 100</span>
+                                <span class="rotten-badge"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Rotten_Tomatoes.svg"
+                                        width="20" class="me-2"> 97%</span>
+                            </div>
+                            <p class="lead w-25 mb-4">John Wick is on the run after killing a member of the
+                                international
+                                assassins'
+                                guild, and
+                                with a $14 million price tag on his head, he is the target of hit men and women
+                                everywhere.
+                            </p>
+                            <a target="_blank" href="https://youtu.be/C0BMx-qxsP4?si=aTPCqArQVrKro46h"
+                                class="watch-button text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" width="20" height="20" viewBox="0 0 256 256" xml:space="preserve">
+
+                                    <defs>
+                                    </defs>
+                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                        <path
+                                            d="M 45 90 C 20.187 90 0 69.813 0 45 c 31.16 -8.812 61.257 -9.555 90 0 C 90 69.813 69.813 90 45 90 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(187,26,26); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path d="M 45 0 C 20.187 0 0 20.187 0 45 h 90 C 90 20.187 69.813 0 45 0 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(221,34,34); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path
+                                            d="M 63.885 47.325 l -14.816 8.554 l -14.816 8.554 c -1.79 1.033 -4.026 -0.258 -4.026 -2.325 V 45 c 10.606 -4.196 22.359 -3.855 35 0 C 65.227 45.904 64.78 46.808 63.885 47.325 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(240,240,240); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path
+                                            d="M 63.885 42.675 l -14.816 -8.554 l -14.816 -8.554 c -1.79 -1.033 -4.026 0.258 -4.026 2.325 V 45 h 35 C 65.227 44.096 64.78 43.192 63.885 42.675 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    </g>
+                                </svg> WATCH TRAILER
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dune pt-5 text-white">
+                        <div class="container d-flex flex-column align-items-start pt-4rem    ">
+                            <h1 class="fs-xl text-white fw-bold">Dune 2 : <br> It begins</h1>
+                            <div class="d-flex align-items-center my-3">
+                                <span class="imdb-badge pe-3"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
+                                        width="30" class="me-2"> 90.0 / 100</span>
+                                <span class="rotten-badge"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Rotten_Tomatoes.svg"
+                                        width="20" class="me-2"> 100%</span>
+                            </div>
+                            <p class="lead w-25 mb-4 fw-bold">Dune is a 2021 American epic space opera film directed
+                                and
+                                co-produced by Denis Villeneuve, who co-wrote the screenplay with Jon Spaihts, and Eric
+                                Roth
+
+                            </p>
+                            <a target="_blank" href="https://youtu.be/_YUzQa_1RCE?si=SuBvt4FP9tBM_kPq"
+                                class="watch-button text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" width="20" height="20" viewBox="0 0 256 256" xml:space="preserve">
+
+                                    <defs>
+                                    </defs>
+                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                        <path
+                                            d="M 45 90 C 20.187 90 0 69.813 0 45 c 31.16 -8.812 61.257 -9.555 90 0 C 90 69.813 69.813 90 45 90 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(187,26,26); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path d="M 45 0 C 20.187 0 0 20.187 0 45 h 90 C 90 20.187 69.813 0 45 0 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(221,34,34); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path
+                                            d="M 63.885 47.325 l -14.816 8.554 l -14.816 8.554 c -1.79 1.033 -4.026 -0.258 -4.026 -2.325 V 45 c 10.606 -4.196 22.359 -3.855 35 0 C 65.227 45.904 64.78 46.808 63.885 47.325 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(240,240,240); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path
+                                            d="M 63.885 42.675 l -14.816 -8.554 l -14.816 -8.554 c -1.79 -1.033 -4.026 0.258 -4.026 2.325 V 45 h 35 C 65.227 44.096 64.78 43.192 63.885 42.675 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    </g>
+                                </svg> WATCH TRAILER
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="interstellar pt-5 text-white">
+                        <div class="container d-flex flex-column align-items-start pt-4rem   ">
+                            <h1 class="fs-xl text-white fw-bold">Interstellar</h1>
+                            <div class="d-flex align-items-center my-3">
+                                <span class="imdb-badge pe-3"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
+                                        width="30" class="me-2"> 86.0 / 100</span>
+                                <span class="rotten-badge"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Rotten_Tomatoes.svg"
+                                        width="20" class="me-2"> 97%</span>
+                            </div>
+                            <p class="lead w-25 mb-4">When Earth becomes uninhabitable in the future, a farmer and
+                                ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of
+                                researchers, to find a new planet for humans.
+                            </p>
+                            <a target="_blank" href="https://youtu.be/2LqzF5WauAw?si=iz6k32I_aHIezc_C"
+                                class="watch-button text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" width="20" height="20" viewBox="0 0 256 256" xml:space="preserve">
+
+                                    <defs>
+                                    </defs>
+                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                        <path
+                                            d="M 45 90 C 20.187 90 0 69.813 0 45 c 31.16 -8.812 61.257 -9.555 90 0 C 90 69.813 69.813 90 45 90 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(187,26,26); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path d="M 45 0 C 20.187 0 0 20.187 0 45 h 90 C 90 20.187 69.813 0 45 0 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(221,34,34); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path
+                                            d="M 63.885 47.325 l -14.816 8.554 l -14.816 8.554 c -1.79 1.033 -4.026 -0.258 -4.026 -2.325 V 45 c 10.606 -4.196 22.359 -3.855 35 0 C 65.227 45.904 64.78 46.808 63.885 47.325 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(240,240,240); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path
+                                            d="M 63.885 42.675 l -14.816 -8.554 l -14.816 -8.554 c -1.79 -1.033 -4.026 0.258 -4.026 2.325 V 45 h 35 C 65.227 44.096 64.78 43.192 63.885 42.675 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    </g>
+                                </svg> WATCH TRAILER
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="featured pb-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="fw-bold mb-4">Top Rated Movies</h2>
+                    <p id="movies" role="button" class="text-primary fw-bold">See More <i
+                            class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <div id="rowData" class="row row-cols-1 row-cols-md-3 row-cols-lg-4  ">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="new py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="fw-bold mb-1">New Arrival</h2>
+                </div>
+                <div id="data" class="row row-cols-1 row-cols-md-3 row-cols-lg-4  ">
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-center">
+                <button id="moviesBtn" class="btn btn-dark text-white fs-5 ">Explore All Movies</button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/home.js"></script>
+</body>
+
+</html>
