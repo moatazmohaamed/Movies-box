@@ -129,8 +129,21 @@ body {
 
 #alertMsg {
     top: 30px;
-    z-index: 2000;
+    z-index: 9999999999 !important;
     transition: all;
 }
 
 /* -------------- */
+
+@media (max-width:568px) {
+
+    .johnWick,
+    .dune,
+    .interstellar {
+        height: 100vh !important;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem !important;
+    }
+}
