@@ -1,7 +1,11 @@
 body {
-    background-color: #eee;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-image: url(/assets/ffflurry.svg);
+}
+
+nav a {
+    color: #fff !important;
 }
 
 .top-right {
@@ -14,9 +18,9 @@ body {
 }
 
 .active {
-    background: #000;
+    background: #fff;
     border-radius: 9999999px;
-    color: #fff !important;
+    color: #000 !important;
     transition: all;
     transition-duration: 500ms;
 }

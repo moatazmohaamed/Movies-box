@@ -14,7 +14,6 @@ document.querySelectorAll(".menu a").forEach(function (link) {
         document.querySelector(".menu .active").classList.remove("active");
         e.target.classList.add("active");
         filterMovies(e.target.dataset.category)
-        console.log(e.target.dataset.category);
     });
 });
 filterMovies('action')

@@ -1,3 +1,4 @@
+const loading = document.getElementById('loading')
 const searchParams = location.search;
 const params = new URLSearchParams(searchParams);
 const id = params.get("id");
@@ -24,12 +25,12 @@ function detailsAPI() {
             Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYzlhMWQ1MGY5NWMxNGEyZmM1YzNiZjNjMzE2ZGFlNiIsIm5iZiI6MTc0MDI2NTM3My45ODUsInN1YiI6IjY3YmE1NzlkYWJlZWRlMzZjNDQ2NjFjNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2pkRpvA1zaoUk4XmORydtep-jnhLJLL2Z3Pui1Q2UUI'
         }
     };
-
+    loading.classList.remove('d-none')
     fetch(`https://api.themoviedb.org/3/movie/${id}?language=en-US`, options)
         .then(res => res.json())
         .then(res => {
             detailsMovie(res)
-            console.log(res);
+            loading.classList.add('d-none')
         })
         .catch(err => console.error(err));
 }
