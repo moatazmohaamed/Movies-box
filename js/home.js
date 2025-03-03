@@ -107,7 +107,7 @@ function displayMovies(api) {
     for (const movies of results.slice(0, 4)) {
         movie += `
                 <div class="col">
-                      <div data-aos="fade-down" class="card">
+                      <div  class="card">
                         <img class="card-img-top" src="https://image.tmdb.org/t/p/w500${movies.poster_path}" alt="${movies.title}"  onclick="navToDetails(${movies.id})" />
                         <div class="card-body">
                             <h4 class="card-title mb-3">${movies.title}</h4>
